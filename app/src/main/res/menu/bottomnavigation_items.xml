@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:checked="true"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/like_icon"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/mypage"
+        android:icon="@drawable/mypage_icon"
+        android:enabled="true"
+        android:title=""/>
+</menu>
