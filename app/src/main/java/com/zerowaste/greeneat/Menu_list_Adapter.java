@@ -1,6 +1,7 @@
 package com.zerowaste.greeneat;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,9 +43,18 @@ public class Menu_list_Adapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        final String menu_name=menu.get(position).getMenu_name();
         MyViewHolder myViewHolder=(MyViewHolder)holder;
         myViewHolder.image.setImageResource(menu.get(position).getImage());
-        myViewHolder.menu_name.setText(menu.get(position).getMenu_name());
+        myViewHolder.menu_name.setText(menu_name);
+        myViewHolder.menu_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context, Bowl_recommend.class);
+                intent.putExtra("menu_name", menu_name);
+                context.startActivity(intent);
+            }
+        });
 
     }
 
