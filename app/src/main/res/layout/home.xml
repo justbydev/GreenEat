@@ -20,8 +20,10 @@
             android:layout_marginRight="60sp"
             android:src="@drawable/map_search"/>
         <ImageView
+            android:id="@+id/shop_list"
             android:layout_width="86.67sp"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:src="@drawable/shop_list"/>
     </LinearLayout>
 </LinearLayout>

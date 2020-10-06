@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                             getSupportFragmentManager().beginTransaction().add(R.id.container, mypage).commit();
                         }
                         if(mypage!=null){
-                            getSupportFragmentManager().beginTransaction().show(like).commit();
+                            getSupportFragmentManager().beginTransaction().show(mypage).commit();
                         }
                         if(home!=null){
                             getSupportFragmentManager().beginTransaction().hide(home).commit();
